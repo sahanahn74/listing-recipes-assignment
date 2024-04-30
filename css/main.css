@@ -1,0 +1,73 @@
+*,
+::after,
+::before { box-sizing: border-box; }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&family=Montserrat&display=swap');
+
+/* Colors */
+:root {
+  --primary: #645cff;
+  --accent: #282566;
+  --grey: #64748b;
+  --light-grey: #f1f5f9;
+}
+
+body {
+  font: 400 16px/1.75 'Montserrat', sans-serif;
+  background: var(--light-grey);
+  color: var(--grey);
+}
+
+h1, h2, h3, h4, h5 { margin: 0; font-family: 'Roboto', sans-serif; }
+
+a { text-decoration: none; }
+
+.btn {
+  cursor: pointer;
+  color: #fff;
+  background: var(--primary);
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+.btn:hover { background: #504acc; }
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-links { display: flex; }
+
+.nav-link {
+  margin: 0 1rem;
+  color: var(--accent);
+  transition: all 0.3s ease;
+}
+.nav-link:hover { color: var(--primary); }
+
+.page {
+  width: 90vw;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.page-footer {
+  text-align: center;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent);
+  color: #fff;
+}
+
+/* Additional Styling for Specific Elements */
+
+/* Add your specific styling here */
+
